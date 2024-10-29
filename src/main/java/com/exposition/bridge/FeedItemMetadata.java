@@ -1,10 +1,11 @@
+// FeedItemMetadata.java (antes ListViewItem)
 package com.exposition.bridge;
 
-public abstract class ListViewItem {
+public abstract class FeedItemMetadata {
 
     private IViewModel viewModel;
 
-    public ListViewItem(IViewModel viewModel) {
+    public FeedItemMetadata(IViewModel viewModel) {
         this.viewModel = viewModel;
     }
 
@@ -16,5 +17,5 @@ public abstract class ListViewItem {
         this.viewModel = viewModel;
     }
 
-    public abstract String render();
+    public abstract Metadata retrieveMetadata();
 }
